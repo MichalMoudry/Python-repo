@@ -1,2 +1,2 @@
 # Python-repo
-Repository with python files.
+Uložiště s python soubory do školy.
