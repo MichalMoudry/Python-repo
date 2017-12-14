@@ -15,3 +15,4 @@ if temp:
             castka = castka % bankovka
 else:
     print("Error")
+input("Press any key to exit...")
