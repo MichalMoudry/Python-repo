@@ -7,4 +7,4 @@ cisla = [0, 1, 3, 5, 9, 45, 12, 165, 222]
 
 for x in cisla:
     print(x)
-input("Stisknete klavesu pro ukonceni...")
+input("Stisknete klavesu pro ukonceni..")
