@@ -12,9 +12,17 @@ def filter_odd_numbers(list_to_filter):
     for item in list_to_filter:
         field_check = isinstance(item, int)
         if field_check is True:
-            if item%2 == 0:
+            if item%2 != 0:
                 filtered_list.append(item)
     return filtered_list
+
+def combine_lists(list1_to_combine, list2_to_combine):
+    combined_list = list()
+    for item1 in list1_to_combine:
+        combined_list.append(item1)
+    for item2 in list2_to_combine:
+        combined_list.append(item2)
+    return combined_list
 
 IS_RETURN = True
 while IS_RETURN:
@@ -51,8 +59,7 @@ while IS_RETURN:
         LIST2 = ['Red', 'Green', 'Black']
         print("List n. 1: ", LIST1)
         print("List n. 2: ", LIST2)
-        LIST2.append(LIST1)
-        print("Combined list: ", LIST2)
+        print("Combined list: ", combine_lists(LIST1, LIST2))
     else:
         print("Error")
 
