@@ -1,4 +1,5 @@
-from Functions import PrintTitle
+def PrintTitle(RequestedTitle):
+    print("----", RequestedTitle, "----")
 
 str = "alpha"
 lst = ["pi", 3.14, 8]
