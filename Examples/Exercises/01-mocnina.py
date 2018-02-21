@@ -4,3 +4,5 @@ def mocnina (num, e):
         e -= 1
     return num
 print (mocnina(2, 5))
+
+input("Press any key to exit...")
