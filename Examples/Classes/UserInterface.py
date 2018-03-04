@@ -1,4 +1,5 @@
 class UserInterface():
+    @staticmethod
     def PrintHeader(Index, HeaderToBePrinted, IsFirst):
         HEADER = ""
         if IsFirst == False:
@@ -12,6 +13,3 @@ class UserInterface():
         HEADER = HEADER + HeaderToBePrinted
         HEADER = HEADER + " -----"
         print(HEADER)
-    
-    def PrintEnd():
-        print("\nPress any key to exit...")
