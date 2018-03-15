@@ -25,14 +25,24 @@ class Dice():
 UserInterface.UserInterface.PrintHeader("1", "Hrací kostka", True)
 isReturn = True
 DICE = Dice()
+RESULT = 0
 while isReturn:
-    print("Kostka hozena")
-    print("Výsledek hodu: {res}".format(res=DICE.Roll()))
+    SIDES = 6
+    try:
+        SIDES = int(input("Počet stran kostky: "))
+    except ValueError:
+        print("Špatný vstup => počet stran kostky je 6\n")
+    DICE.sides = SIDES
+    ROLLRESULT = DICE.Roll()
+    RESULT = RESULT + ROLLRESULT
+    print("Výsledek hodu: {res}".format(res=ROLLRESULT))
     decision = str(input ("Chcete pokračovat [Y/N]? "))
     if decision == "N":
         isReturn = False
+        UserInterface.UserInterface.PrintHeader("", "Výsledek všech hodů", False)
+        print(RESULT, "\n")
     else:
         isReturn = True
         print("")
-        print("--------")
+        UserInterface.UserInterface.PrintHeader("", "Nový hod", False)
         print("")

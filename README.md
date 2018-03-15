@@ -6,3 +6,4 @@ Repository for python school files.
 - [Python language reference](https://docs.python.org/3/reference/index.html)
 - [Python extension for Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=ms-python.python)
 - [Getting Started with Python](https://code.visualstudio.com/docs/python/python-tutorial)
+- [Graphical Apps with Python](https://www.root.cz/clanky/graficke-uzivatelske-rozhrani-v-pythonu-knihovna-tkinter/#k01)
